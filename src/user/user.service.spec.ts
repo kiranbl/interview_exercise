@@ -6,6 +6,8 @@ import {
   ConfigurationManager,
   MockedConfigurationManager,
 } from '../configuration/configuration-manager';
+import * as dotenv from 'dotenv'; // Imported dotenv package for getting local environment variables.
+dotenv.config();
 
 const userObject = {
   id: '5fe0cce861c8ea54018385ae',
