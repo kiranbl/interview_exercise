@@ -154,6 +154,9 @@ export class ChatMessageModel {
   })
   reactions?: Reaction[];
 
+  @Prop() 
+  tag?:string;  // Added the property called tag which is of type string to add the tag to a message
+
   /**
    * All the properties below are virtual properties
    * @url https://mongoosejs.com/docs/tutorials/virtuals.html

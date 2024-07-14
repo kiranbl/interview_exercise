@@ -148,6 +148,9 @@ export class ChatMessage {
 
   @Field({ defaultValue: false, nullable: true })
   isSenderBlocked?: boolean;
+
+  @Field()
+  tag?: string; // Added the field called tag which is of type string to add the tag to a message
 }
 
 /***
@@ -174,6 +177,8 @@ export class SocketChatMessage {
   richContent?: RichMessageContent;
 
   reactions?: Reaction[];
+  
+  tag?: string; 
 
   isSenderBlocked?: boolean;
 }

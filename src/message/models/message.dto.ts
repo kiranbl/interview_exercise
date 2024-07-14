@@ -118,6 +118,8 @@ export class MessageDto {
 
   @Field(() => RichContentDto, { nullable: true })
   richContent?: RichContentDto;
+  @Field()
+  tag?: string; // Added the field called tag which is of type string to add the tag to a message
 }
 
 // TODO Min - Max on limit

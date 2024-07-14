@@ -29,7 +29,7 @@ export class MessageData {
     chatMessage.conversationId = data.conversationId;
     chatMessage.created = new Date();
     chatMessage.deleted = false;
-
+    chatMessage.tag = data.tag; // Added this tag variable to save it in the database
     createRichContent(data, chatMessage);
 
     const dbResult = await chatMessage.save();

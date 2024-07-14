@@ -144,6 +144,7 @@ export class MessageLogic implements IMessageLogic {
       likesCount: message.likesCount,
       richContent: await this.mapRichContent(messageDto, message),
       resolved: message.resolved,
+      tag:message.tag, // Added tag to the payload to send the message
       isSenderBlocked: false,
     });
 
